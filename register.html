@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+  </head>
+  <style>
+    h1 {
+      color: indigo;
+    }
+
+    .clrclass {
+      color: darkred;
+      font-family: cursive;
+      font-variant: inherit;
+      font-feature-settings: "vpal";
+    }
+    .bg {
+      background-color: rgb(80, 255, 168);
+    }
+    .fntclass {
+      color: rgb(38, 0, 128);
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    #button {
+      background-color: rgb(218, 169, 218);
+    }
+  </style>
+  <body>
+    <center>
+    <table>
+      <form>
+      <th><h1>Registration form</h1></th>
+          <tr><td><label for="fname" class="clrclass">First Name : </label></td>
+        <td><input
+          type="text"
+          class="bg fntclass"
+          id="fname"
+          name="fname" placeholder="Enter your First Name...."
+        /></td></tr><br /><br />
+        <tr><td><label for="lname" class="clrclass">Last Name : </label></td>
+        <td><input
+          type="text"
+          class="bg fntclass"
+          id="lname"
+          name="lname" placeholder="Enter your Last name...."
+        /></td></tr><br /><br />
+        <tr>
+          <td>
+            <label for="email" class="clrclass">Email Id : </label>
+          </td>
+          <td>
+            <input type="text" class="bg fntclass" id="email" name="email" placeholder="Your Email is....">
+          </td>
+        </tr><br><br>
+        <tr>
+          <td>
+            <label for="password" class="clrclass">Password : </label>
+          </td>
+          <td>
+            <input type="password" class="bg fntclass" id="password" name="password">
+          </td>
+        </tr>
+        <tr><td><label for="place" class="clrclass">Place : </label></td>
+        <td><input
+          type="text"
+          class="bg fntclass"
+          id="place"
+          name="place"
+        /></td></tr><br /><br />
+        <tr><td><label for="address" class="clrclass">Address</label></td>
+        <td><textarea
+          class="bg fntclass"
+          rows="5"
+          cols="20"
+          name="Address"
+          id="Address" placeholder="Description...."
+        ></textarea
+        ></td></tr><br /><br />
+        <tr><td><label for="gender" class="clrclass">Gender : </label></td>
+        <td><input type="radio" id="male" name="gender" value="male" />
+        <label for="male" class="clrclass">Male</label>
+        <input
+          type="radio"
+          id="female"
+          name="gender"
+          value="female"
+          checked="checked"
+        />
+        <label for="female" class="clrclass">Female</label></td></tr><br /><br />
+        <tr>
+          <td><label for="degree" class="clrclass">Qualification : </label></td>
+        <td><input type="checkbox" id="ug" name="qualification" value="ug" />
+        <label for="qualification" class="clrclass">UG</label>
+        <input type="checkbox" id="pg" name="qualification" value="pg" />
+        <label for="qualification" class="clrclass">PG</label></td></tr><br /><br />
+        <tr>
+          <td><label for="country" class="clrclass">Country of Residence : </label></td>
+        <td><select name="country" id="country">
+          <option value="India">INDIA</option>
+          <option value="UK">UK</option>
+          <option value="USA">USA</option></select
+        ></td></tr><br /><br />
+        <tr><td><label for="fileselect" class="clrclass">Upload your Photo : </label></td>
+        <td><input
+          type="file"
+          class="bg fntclass"
+          name="upload"
+          id="fileselect"
+        /></td></tr><br /><br /><br><br>
+      </tr>
+      </table><br>
+      <button class="clrclass" id="button">Click here to Register</button>
+      </form>
+    </center>
+  </body>
+</html>
